@@ -26,7 +26,7 @@ export default function Auth (props) {
         redirect: 'follow'
         };
 
-        fetch("http://localhost:3000/api/signUp", requestOptions)
+        fetch("https://project-backend-nine.vercel.app/api/signUp", requestOptions)
         .then(response => response.text())
         .then(result => window.location.href = "/")
         .catch(error => console.log('error', error));
@@ -48,7 +48,7 @@ export default function Auth (props) {
         redirect: 'follow'
         };
 
-        fetch("http://localhost:3000/api/signIn", requestOptions)
+        fetch("https://project-backend-nine.vercel.app/api/signIn", requestOptions)
         .then(response => response.json())
         .then(result => {
             console.log(result)
