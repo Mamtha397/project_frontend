@@ -28,7 +28,7 @@ export default function Auth (props) {
 
         fetch("http://localhost:3000/api/signUp", requestOptions)
         .then(response => response.text())
-        .then(result => window.location.href = "/signIn")
+        .then(result => window.location.href = "/")
         .catch(error => console.log('error', error));
     }
 
