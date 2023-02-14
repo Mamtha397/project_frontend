@@ -15,7 +15,7 @@ export default function Dashboard (props) {
         redirect: 'follow'
         };
 
-        fetch("http://localhost:3000/api/getAllData", requestOptions)
+        fetch("https://project-backend-nine.vercel.app/api/getAllData", requestOptions)
         .then(response => response.json())
         .then(result => setData(result.message))
         .catch(error => console.log('error', error));
@@ -31,7 +31,7 @@ export default function Dashboard (props) {
         redirect: 'follow'
         };
 
-        fetch("http://localhost:3000/api/deleteData/"+id, requestOptions)
+        fetch("https://project-backend-nine.vercel.app/api/deleteData/"+id, requestOptions)
         .then(response => response.text())
         .then(result => {
             alert("Deleted Successfully")
