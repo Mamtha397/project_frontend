@@ -33,7 +33,7 @@ export default function Create (props) {
             redirect: 'follow'
             };
     
-            fetch("http://localhost:3000/api/update/"+id, requestOptions)
+            fetch("https://project-backend-nine.vercel.app/api/update/"+id, requestOptions)
             .then(response => response.text())
             .then(result => {
                 alert("Updated SuccessFully");
@@ -55,7 +55,7 @@ export default function Create (props) {
             redirect: 'follow'
             };
     
-            fetch("http://localhost:3000/api/create", requestOptions)
+            fetch("https://project-backend-nine.vercel.app/api/create", requestOptions)
             .then(response => response.text())
             .then(result => {
                 alert("Created SuccessFully");
@@ -78,7 +78,7 @@ export default function Create (props) {
                 redirect: 'follow'
               };
               
-              fetch("http://localhost:3000/api/getData/"+id, requestOptions)
+              fetch("https://project-backend-nine.vercel.app/api/getData/"+id, requestOptions)
                 .then(response => response.json())
                 .then(result => {
                     setName(result.message[0].name);
